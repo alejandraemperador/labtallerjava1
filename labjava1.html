@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculadora</title>
+        <link rel="stylesheet" href="styles.css"> 
+    </head>
+
+    <body>
+
+        <h1> Calculadora HTML </h1>
+
+        <div class="container">
+
+            <div class="calculadora">
+                <form id="formulario">
+                    <!-- Campo para el operador 1 -->
+                    <label for="op1">Operador 1:</label>
+                    <input type="number" id="op1" placeholder="Ingrese aquí el primer número..." required>
+        
+                    <!-- Campo para la operacion -->
+                     
+                    <label for="operador">Operación:</label>
+                    <input type="text" id="operador" placeholder="Ingrese la operación que quiere hacer (+, -, *, /, **, %) " required>
+                    
+                    <!-- Campo para el operador 2 -->
+                    <label for="op2">Operador 2:</label>
+                    <input type="number" id="op2" placeholder="Ingrese aquí el segundo número..." required>
+        
+                    <button type="submit">Calcular...</button>
+                </form>
+            </div>
+        
+            <div class="nota-operaciones">
+                <p><strong>Operaciones permitidas:</strong></p>
+                <ul>
+                    <li><strong>Suma:</strong> + </li>
+                    <li><strong>Resta:</strong> - </li>
+                    <li><strong>Multiplicación:</strong> * </li>
+                    <li><strong>División: </strong> / </li>
+                    <li><strong>Exponenciación: </strong> ** </li>
+                    <li><strong>Módulo: </strong> % </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="resultado" id="resultado">Este es el resultado:</div>
+        <script src="scripts.js"></script>
+
+    </body>
+
+</html>
